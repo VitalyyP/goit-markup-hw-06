@@ -530,6 +530,10 @@ address {
   background: var(--lite-bg-color);
   width: 528px;
   height: 581px;
+  padding-top: 40px;
+  padding-left: 41px;
+  padding-right: 39px;
+  text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -558,6 +562,28 @@ address {
   width: 11px;
   height: 11px;
   fill: black;
+}
+
+.modal .button-close:hover .icon,
+.modal .button-close:focus .icon {
+  fill: var(--accent-color);
+}
+
+.modal-title {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.17;
+  font-weight: 700;
+}
+
+.form-label {
+  display: block;
+  text-align: left;
+}
+.form-input {
+  display: block;
+  width: 100%;
 }
 
 .filter {
