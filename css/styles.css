@@ -580,6 +580,13 @@ address {
   position: relative;
 }
 
+.form-field:focus .form-input,
+.form-field:hover .form-input {
+  outline-color: var(--accent-color);
+  border-color: var(--accent-color);
+  
+}
+
 .form-label {
   display: block;
   margin-bottom: 4px;
@@ -616,6 +623,12 @@ address {
   fill: var(--title-color);
 }
 
+.form-field:hover .icon,
+.form-field:focus .icon {
+  fill: var(--accent-color);
+ 
+}
+
 .form-checkbox {
   position: relative;
   padding-left: 35px;
@@ -624,15 +637,15 @@ address {
 }
 
 .form-checkbox .form-checkbox-input {
-  /* position: absolute; */
+  position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
-.form-checkbox::after {
+.form-label-checkbox::after {
   position: absolute;
-  top: 4.5px;
+  top: 4px;
   left: 11px;
   content: "";
   display: block;
@@ -641,6 +654,9 @@ address {
   background-image: url("../images/icons/checkbox.svg");
 }
 
+.form-checkbox-input:checked + .form-label-checkbox::after {
+  background-image: url("../images/icons/checkboxon.svg");
+}
 .form-checkbox .link{
   text-decoration: underline;
   color: var(--accent-color);
