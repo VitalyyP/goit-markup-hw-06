@@ -517,7 +517,6 @@ address {
 }
 
 .backdrop.is-hidden {
-  /* visibility: hidden; */
   opacity: 0;
   pointer-events: none;
 }
@@ -583,10 +582,10 @@ address {
 
 .form-label {
   display: block;
-  text-align: left;
+  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
-  margin-bottom: 4px;
+  text-align: left;
   color:var(--main-text-color)
 }
 .form-input,
@@ -618,14 +617,31 @@ address {
 }
 
 .form-checkbox {
+  position: relative;
+  padding-left: 35px;
   margin-bottom: 30px;
+  text-align: left;
 }
 
-.form-checkbox .checkbox {
+.form-checkbox .form-checkbox-input {
+  /* position: absolute; */
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
-.form-checkbox span{
+.form-checkbox::after {
+  position: absolute;
+  top: 4.5px;
+  left: 11px;
+  content: "";
+  display: block;
+  width: 16px;
+  height: 15px;
+  background-image: url("../images/icons/checkbox.svg");
+}
+
+.form-checkbox .link{
   text-decoration: underline;
   color: var(--accent-color);
   
@@ -635,6 +651,7 @@ address {
   width: 200px;
   height: 50px;
   padding: 10px 55px;
+  
 }
 
 .filter {
@@ -649,6 +666,7 @@ address {
 
 .filter .button {
   padding: 6px 22px;
+ 
   
 }
 
