@@ -508,6 +508,7 @@ address {
 }
 
 .form-email {
+  padding-top: 12px;
   color: var(--lite-bg-color);
 }
 
