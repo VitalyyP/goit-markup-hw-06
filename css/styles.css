@@ -362,6 +362,10 @@ address {
   transition: fill var(--transition);
 }
 
+.auth-nav .item:nth-child(2) .icon {
+  margin-right: 7px;
+}
+
 .auth-nav .link:hover .icon,
 .auth-nav .link:focus .icon {
   fill: var(--accent-color);
@@ -503,7 +507,61 @@ address {
   transition: fill var(--transition);
 }
 
+.form-email {
+  color: var(--lite-bg-color);
+}
 
+.form-email .label-email {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.form-email .input-email {
+  position: absolute;
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-email .button-email {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  padding-left: 28px;
+  padding-right: 27px;
+  margin-left: 370px;
+  border: 1px;
+
+}
+
+.form-email .icon {
+  width: 24px;
+  height: 24px;
+}
+
+
+.flex-half {
+  flex-basis: calc((100% - 30px * 2) / 2);
+  margin-left: 30px;
+  margin-top: 30px;
+}
 
 
 .backdrop {
@@ -653,6 +711,9 @@ address {
   appearance: none;
 }
 
+.form-label-checkbox {
+  color: var(--main-text-color);
+}
 .form-label-checkbox::after {
   position: absolute;
   top: 4px;
@@ -674,11 +735,16 @@ address {
 }
 
 .form .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   width: 200px;
   height: 50px;
-  padding: 10px 55px;
-  
+  padding: 10px;
 }
+
 
 .filter {
   display: flex;
